@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=DM+Serif+Display:ital@0;1&family=Noto+Sans+Arabic:wght@400;500;600;700&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'DM Sans', sans-serif;
+  --font-serif: 'DM Serif Display', serif;
+  --breakpoint-md: 50rem;
+}
+
+@layer base {
+  html[data-theme='dark'] {
+    color-scheme: dark;
+    background-color: #191714;
+    --tone-page: #191714;
+    --tone-secondary: #211e19;
+    --tone-elevated: #29251f;
+    --tone-card: #302a23;
+    --tone-ink: #f5efe6;
+    --tone-copy: #c0b4a5;
+    --tone-muted: #b3a491;
+    --tone-accent: #e09a79;
+    --tone-solid: #d88968;
+    --tone-solid-hover: #e49b7b;
+    --tone-on-solid: #241a14;
+    --tone-border: #40382f;
+    --tone-strong: #685342;
+    --tone-glow: #70412c35;
+    --tone-dot: #a77a5940;
+    --tone-grid: #b0876412;
+    --tone-shadow: #00000030;
+    --tone-shadow-soft: #00000018;
+    --tone-selection: #704832;
+  }
+  html.theme-transition *,
+  html.theme-transition *::before,
+  html.theme-transition *::after {
+    transition-property: color, background-color, border-color, box-shadow, fill, stroke;
+    transition-duration: 250ms;
+    transition-timing-function: ease;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html.theme-transition *,
+    html.theme-transition *::before,
+    html.theme-transition *::after {
+      transition-duration: 0ms;
+    }
+  }
+}
