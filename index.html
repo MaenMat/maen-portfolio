@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <meta charset="UTF-8" />
+    <script>
+      (() => {
+        let theme;
+        try { theme = localStorage.getItem('maen-theme'); } catch {}
+        const dark = theme === 'dark' || (theme !== 'light' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+        document.documentElement.dataset.theme = dark ? 'dark' : 'light';
+      })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Figma Make App</title>
+    
+    <meta name="description" content="Explore Maen Matouk’s bilingual software engineering portfolio, showcasing FinTech platforms, enterprise systems, technical expertise, and measurable project achievements.">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="icon" href="/favicon.png">
+    <meta property="og:title" content="Figma Make App">
+    <meta property="og:description" content="Explore Maen Matouk’s bilingual software engineering portfolio, showcasing FinTech platforms, enterprise systems, technical expertise, and measurable project achievements.">
+    <script type="module" crossorigin src="/assets/index-BJ12iw1q.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-2Fgh07Ce.css">
+  </head>
+  <body>
+    
+    <div id="root"></div>
+    
+  </body>
+</html>

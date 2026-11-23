@@ -1,0 +1,10 @@
+{
+  "description": "Explore Maen Matouk’s bilingual software engineering portfolio, showcasing FinTech platforms, enterprise systems, technical expertise, and measurable project achievements.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
