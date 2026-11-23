@@ -8,6 +8,9 @@
 }
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
   html[data-theme='dark'] {
     color-scheme: dark;
     background-color: #191714;
@@ -39,6 +42,9 @@
     transition-timing-function: ease;
   }
   @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
     html.theme-transition *,
     html.theme-transition *::before,
     html.theme-transition *::after {
